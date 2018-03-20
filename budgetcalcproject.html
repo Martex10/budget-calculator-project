@@ -7,17 +7,39 @@
 </head>
 <body>
     <h1>Budget Calculator</h1>
-    <label id="number">What is your hourly salery?</label>
-    <input type="number" name="hourly">
-    <p>your estimated income before taxes assumming you work 40 hours per week is <span></span>.</p>
-    <p>your estimanted income after taxes is <span></span> assuming you live in florida</p>
-    <p>Below is recomended monthly budget percentage allocation</p>
+    <label for="hourly-salery">What is your hourly salery?</label>
+    <input id="hourly-salery" type="number" name="hourly-salery-input">
+    <p>your estimated income before taxes assumming you work 40 hours per week is <span id="annual-salery-befor-tax">0</span>.</p>
+    <p>your estimanted income annualy after taxes is <span id="annual-salery-after-tax">0</span> and your monthly is <span id="annual-monthly-salery-after-tax">0</span> assuming you live in florida.</p>
+    <p>Below is recomended yearly and monthly budget percentage allocation</p>
+    <!-- will add a feature drop down that will allow user to view break down of what is included in each
+    catagorie for expenditures -->
     <ul>
-        <li>Housing 35%</li><span></span>
-        <li>Debt 15%</li><span></span>
-        <li>Transportation 15%</li><span></span>
-        <li>Other Expenses 25%</li><span></span>
-        <li>Savings 10%</li><span></span>
+        <div>
+            <li>Housing 35%</li>
+            <span class="break-down" id="housing">0</span>
+            <li>monthly budget <span class="break-down-monthly" id="housing">0</span></li>
+        </div>
+        <div>
+            <li>Debt 15%</li>
+            <span class="break-down" id="debt">0</span>
+            <li>monthly budget <span class="break-down-monthly" id="debt">0</span></li>
+        </div>
+        <div>
+            <li>Transportation 15%</li>
+            <span class="break-down" id="trans">0</span>
+            <li>monthly budget <span class="break-down-monthly" id="trans">0</span></li>
+        </div>
+        <div>
+            <li>Other Expenses 25%</li>
+            <span class="break-down" id="other">0</span>
+            <li>monthly budget <span class="break-down-monthly" id="other">0</span></li>
+        </div>
+        <div>
+            <li>Savings 10%</li>
+            <span class="break-down" id="save">0</span>
+            <li>monthly budget <span class="break-down-monthly" id="save">0</span></li>
+        </div>
     </ul>
     <script type="text/javascript" src="budgetcalcproject.js"></script>
 </body>
